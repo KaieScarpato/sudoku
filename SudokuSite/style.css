@@ -1,0 +1,40 @@
+
+body {
+    text-align: center;
+    display: flex;
+    background-color: darkgrey;
+    }
+    
+    .table{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    input.cell {
+                font-size: 15pt;
+                text-align: center;
+            }
+    
+    .cell {
+        background-color: honeydew;
+        border: 1px black solid;
+        width: 1.7em;
+        height: 1.7em;
+    }
+    
+    #c93, #c83, #c73, #c63, #c53, #c43, #c33, #c23, #c13{
+        margin-right: 5px;
+    }    
+    
+    #c96, #c86, #c76, #c66, #c56, #c46, #c36, #c26, #c16{
+        margin-right: 5px;
+    }    
+    
+    #c31,#c32,#c33,#c34,#c35,#c36,#c37,#c38,#c39 {
+        margin-bottom: 5px;    
+    }
+    
+    #c61,#c62,#c63,#c64,#c65,#c66,#c67,#c68,#c69 {
+        margin-bottom: 5px;
+    }
+    

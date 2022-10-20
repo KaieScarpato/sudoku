@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="table">
+        <form class="board" autocomplete="off">
+            <h1>Sudoku Solver</h1>
+            <table id = "grid">
+                <tbody>
+                    <thead>
+                        Input Your Board
+                    </thead>
+
+                    <tr>
+                        <td>
+                            <input class="cell" id="c11" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c12" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c13" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c14" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c15" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c16" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell " id="c17" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c18" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c19" maxlength="1" autocomplete="off" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="cell" id="c21" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c22" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c23" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c24" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c25" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c26" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c27" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c28" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c29" maxlength="1" autocomplete="off" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="cell" id="c31" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c32" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c33" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c34" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c35" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c36" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c37" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c38" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c39" maxlength="1" autocomplete="off" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="cell" id="c41" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c42" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c43" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c44" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c45" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c46" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c47" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c48" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c49" maxlength="1" autocomplete="off" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="cell" id="c51" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c52" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c53" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c54" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c55" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c56" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c57" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c58" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c59" maxlength="1" autocomplete="off" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="cell" id="c61" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c62" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c63" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c64" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c65" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c66" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c67" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c68" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c69" maxlength="1" autocomplete="off" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="cell" id="c71" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c72" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c73" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c74" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c75" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c76" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c77" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c78" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c79" maxlength="1" autocomplete="off" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="cell" id="c81" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c82" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c83" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c84" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c85" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c86" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c87" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c88" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c89" maxlength="1" autocomplete="off" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="cell" id="c91" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c92" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c93" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c94" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c95" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c96" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c97" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c98" maxlength="1" autocomplete="off" />
+                        </td>
+                        <td>
+                            <input class="cell" id="c99" maxlength="1" autocomplete="off" />
+                        </td>
+                    </tr>
+                    <td style="padding-top:10px" align="center" colspan="9">
+                    </td>
+                </tbody>
+            </table>
+            <input class="btn btn-primary  btn-lg " type="reset" style=p adding-top:10px; />
+            <input class="btn btn-primary  btn-lg " type="button" value="Fill" onclick="javascript:fill()" />
+            <input class="btn btn-success  btn-lg " type="button" value="Solve" onclick="javascript:solve()" />
+        </form>
+    </div>
+    <script src = "index.js"></script>
+</body>
+</html>
